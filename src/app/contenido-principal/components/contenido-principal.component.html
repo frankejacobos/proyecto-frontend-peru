@@ -1,0 +1,15 @@
+<main class="p-2 h-100" style="background-color: white;">
+  <nav>
+    <mat-toolbar color="primary">
+      <button mat-mini-fab color="primary" [routerLink]="['paises']">
+        <mat-icon>home</mat-icon>
+      </button>
+      <span class="spacer"></span>
+      <a mat-mini-fab color="primary" href="javascript:history.back()">
+        <mat-icon>arrow_back</mat-icon>
+      </a>
+      <span class="spacer"></span>
+    </mat-toolbar>
+  </nav>
+  <router-outlet></router-outlet>
+</main>

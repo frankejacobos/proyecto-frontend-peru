@@ -1,0 +1,15 @@
+section {
+  margin-top: 8px;
+  min-height: calc(100vh - 104px);
+  background-color: #B2BACC;
+}
+
+.pais {
+  background-color: white;
+  width: 400px;
+}
+
+h2,
+p {
+  margin: 0px;
+}
