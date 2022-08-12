@@ -1,10 +1,15 @@
-<section class="container-fluid d-flex align-items-center justify-content-center">
+<section
+  class="container-fluid d-flex align-items-center justify-content-center"
+>
   <div class="row">
-    <article class="col p-3 mx-auto d-flex justify-content-center" *ngFor="let distrito of distritos">
-      <div class="dep d-flex p-3" style="width: 200px;">
+    <article
+      class="col p-3 mx-auto d-flex justify-content-center"
+      *ngFor="let distrito of distritos"
+    >
+      <div class="dep d-flex p-3" style="width: 200px">
         <div class="col px-3 text-center">
-          <h2>{{distrito.nombre|titlecase}}</h2>
-          <p>{{distrito.provincia.nombre|titlecase}}</p>
+          <h2>{{ distrito.nombre | titlecase }}</h2>
+          <p>{{ distrito.provincia.nombre | titlecase }}</p>
         </div>
       </div>
     </article>

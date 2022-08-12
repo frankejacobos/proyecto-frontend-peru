@@ -1,17 +1,30 @@
-<section class="container-fluid d-flex align-items-center justify-content-center">
+<section
+  class="container-fluid d-flex align-items-center justify-content-center"
+>
   <div class="row">
-    <article class="col p-3 mx-auto d-flex justify-content-center" *ngFor="let departamento of departamentos">
+    <article
+      class="col p-3 mx-auto d-flex justify-content-center"
+      *ngFor="let departamento of departamentos"
+    >
       <div class="dep d-flex">
         <div class="col-6 d-flex align-items-center">
           <div class="col text-end">
-            <h2>{{departamento.nombre|titlecase}}</h2>
-            <p>{{departamento.area|number}} km.</p>
-            <p>Capital: {{departamento.capital|titlecase}}</p>
-            <a [href]="['provincias/'+ encode(departamento.nombre)]" mat-raised-button>Mostrar provincias</a>
+            <h2>{{ departamento.nombre | titlecase }}</h2>
+            <p>{{ departamento.area | number }} km.</p>
+            <p>Capital: {{ departamento.capital | titlecase }}</p>
+            <a
+              [href]="['provincias/' + encode(departamento.nombre)]"
+              mat-raised-button
+              >Mostrar provincias</a
+            >
           </div>
         </div>
         <div class="col-6 py-4 text-center">
-          <img [src]="departamento.ubicacion_url" alt="mapa de {{departamento.nombre}}" class="w-75">
+          <img
+            [src]="departamento.ubicacion_url"
+            alt="mapa de {{ departamento.nombre }}"
+            class="w-75"
+          />
         </div>
       </div>
     </article>

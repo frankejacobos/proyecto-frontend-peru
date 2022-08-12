@@ -34,7 +34,7 @@ import { MaterialModule } from './material.module';
     MaterialModule,
     HttpClientModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [PaisesService, RegionesService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

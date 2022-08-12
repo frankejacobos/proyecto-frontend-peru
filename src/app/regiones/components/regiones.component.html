@@ -1,18 +1,29 @@
-<section class="container-fluid d-flex align-items-center justify-content-center">
-  <div class="row ">
-    <article class="col p-3 mx-auto d-flex justify-content-center" *ngFor="let region of regiones">
-      <div class="region d-flex p-3" style="max-height: 300px;">
+<section
+  class="container-fluid d-flex align-items-center justify-content-center"
+>
+  <div class="row">
+    <article
+      class="col p-3 mx-auto d-flex justify-content-center"
+      *ngFor="let region of regiones"
+    >
+      <div class="region d-flex p-3" style="max-height: 300px">
         <div class="col-6 d-flex align-items-center">
           <div class="col px-3 text-center">
-            <h2>{{region.nombre|titlecase}}</h2>
-            <p>{{region.nombre|titlecase}} del Peru</p>
-            <p>{{region.longitud_km|number}} km.</p>
-            <p>{{region.cant_de_departamentos}} departamentos</p>
-            <a [href]="['departamentos/'+ region.nombre]" mat-raised-button>Mostrar dptos</a>
+            <h2>{{ region.nombre | titlecase }}</h2>
+            <p>{{ region.nombre | titlecase }} del Peru</p>
+            <p>{{ region.longitud_km | number }} km.</p>
+            <p>{{ region.cant_de_departamentos }} departamentos</p>
+            <a [href]="['departamentos/' + region.nombre]" mat-raised-button
+              >Mostrar dptos</a
+            >
           </div>
         </div>
         <div class="col-6 p-3 border text-center">
-          <img [src]="region.imagen_url" [alt]="'ubicacion de '+region.nombre" class="w-75">
+          <img
+            [src]="region.imagen_url"
+            [alt]="'ubicacion de ' + region.nombre"
+            class="w-75"
+          />
         </div>
       </div>
     </article>

@@ -3,10 +3,11 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RegionesService {
-
-  constructor(private http: HttpClient) { }
-  getRegiones() { return this.http.get<any>(`${environment.API_URL}/regiones`) }
+  constructor(private http: HttpClient) {}
+  getRegiones() {
+    return this.http.get<any>(`${environment.API_URL}/regiones`);
+  }
 }
